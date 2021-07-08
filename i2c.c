@@ -5,10 +5,10 @@
  uint8 accel2_ReadReg(uint8 Reg)
 { 
         uint8 Write_Buf[1]={0};  
-        Write_Buf[0]=Reg; //zapisanie rejestru, z którego odczytujemy dane
-        uint8 Read_Buf[1]={0};  //Bufor do trzymania wartości z adresu wyżej
+        Write_Buf[0]=Reg; 
+        uint8 Read_Buf[1]={0}; 
        
-        //MasterReadBuf do trzymania wartości dla buforu 'read'
+        
         I2C_1_MasterWriteBuf(ACCEL_ADDR, (uint8 *)Write_Buf, 1 , I2C_1_MODE_NO_STOP);
         while((I2C_1_MasterStatus() & I2C_1_MSTAT_WR_CMPLT)==0){}
         
