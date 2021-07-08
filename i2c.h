@@ -2,11 +2,11 @@
 
     #define WHO_AM_I        (0b00001111)
 
-    #define ACCEL_ADDR      (0b01101011) // adres akcelerometru i gyroskopu ze strony https://botland.store/9dof-imu-sensors/5528-minimu-9-v5-9dof-accelerometer-gyroscope-and-magnetometer-i2c-pololu-2738.html
+    #define ACCEL_ADDR      (0b01101011) 
     #define CTRL_REG1       (0b00010000) // CTRL1_XL    
     
-    #define GYRO_ADDR       (0b01101011) // adres akcelerometru i gyroskopu
-    #define CTRL_REG2       (0b00010001) // wlaczenie gyroskopu CTRL2_G z noty
+    #define GYRO_ADDR       (0b01101011)
+    #define CTRL_REG2       (0b00010001) 
     
 
     #define OUT_X_LSB       (0b00101000) //akcelerometr
